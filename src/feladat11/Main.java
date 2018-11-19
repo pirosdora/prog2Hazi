@@ -58,6 +58,7 @@ hallgatók.add(new Hallgató("Tamás", 15, true, 2.9));
 hallgatók.add(new Hallgató("Dóra", 24, false, 4.3));
 
         System.out.println(átlag(hallgatók));
+        Egyetem.háromLegfiatalabb(hallgatók);
     }
   
 }
