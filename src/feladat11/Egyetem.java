@@ -34,25 +34,26 @@ public class Egyetem extends Személy implements University {
 public static void háromLegfiatalabb(List<Személy> polgárok){
     
     List<Hallgató> hallgatók=new ArrayList<>();
-    for(int i=0;i<polgárok.size();i++){
+   
         if(polgárok.size()<3){
+            for(int i=0;i<polgárok.size();i++){
             System.out.println(polgárok.get(i));
-        }
+        }}
+    for(int i=0;i<polgázok.size();i++){
         if(polgárok.get(i) instanceof Hallgató){           
            hallgatók.add((Hallgató) polgárok.get(i));
         }
     }
-    
+    if(hallgatok.size()<3){
     for(int i=0;i<hallgatók.size();i++){
-        if(hallgatók.size()<3){
         System.out.println(hallgatók.get(i));
-    }else{
+    }}else{
             Collections.sort(hallgatók);
             for(int j=0;j<=2;j++){
                 System.out.println(hallgatók.get(j));
             }
         }
-    }
+    
     
     
     
